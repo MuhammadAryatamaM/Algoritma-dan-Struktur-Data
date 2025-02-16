@@ -68,7 +68,7 @@ Solusi ada di FungsiStokBunga.java, dan berikut screenshot hasilnya
 
 **Penjelasan singkat:**
 
-#### Ada 4 langkah utama:
+#### Ada 3 langkah utama:
 
 1. Buat array untuk tiap data:
 
@@ -140,7 +140,7 @@ Solusi ada di TugasJadwalMatkul.java, dan berikut screenshot hasilnya
 
 **Penjelasan singkat:**
 
-#### Ada 4 langkah utama:
+#### Ada 3 langkah utama:
 
 1. Input jumlah matkul yang akan digunakan untuk panjang tiap array untuk data:
 
@@ -161,7 +161,7 @@ Solusi ada di TugasJadwalMatkul.java, dan berikut screenshot hasilnya
    2.3.2. Perulangan untuk cek seluruh indeks yang mempunyai semester yang sama sesuai input. Jika ada, tampilkan datanya dan mengubah boolean untuk cek ketersediaan menjadi true. Jika sampai indeks terakhir dan boolean masih false, tampilkan data tidak ada<br>
 
    Jika memilih 4, akan menampilkan jadwal berdasarkan nama mata kuliah: <br>
-   2.2.1. Input nama mata kuliah <br>
-   2.2.2. Perulangan untuk cek seluruh indeks yang mempunyai nama yang sama sesuai input. Jika ada, tampilkan datanya dan mengubah boolean untuk cek ketersediaan menjadi true. Jika sampai indeks terakhir dan boolean masih false, tampilkan data tidak ada <br>
+   2.4.1. Input nama mata kuliah <br>
+   2.4.2. Perulangan untuk cek seluruh indeks yang mempunyai nama yang sama sesuai input. Jika ada, tampilkan datanya dan mengubah boolean untuk cek ketersediaan menjadi true. Jika sampai indeks terakhir dan boolean masih false, tampilkan data tidak ada <br>
 
 3. Keluar program dengan memilih 5
