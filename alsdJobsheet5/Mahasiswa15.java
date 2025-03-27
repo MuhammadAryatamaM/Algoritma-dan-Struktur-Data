@@ -1,4 +1,4 @@
-package alsdJobsheet6;
+package alsdJobsheet5;
 
 public class Mahasiswa15 {
     String nim;

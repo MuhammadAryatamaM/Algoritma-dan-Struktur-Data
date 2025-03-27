@@ -5,113 +5,175 @@
 | Kelas      | TI - 1H                                                                   |
 | Repository | [link] (https://github.com/MuhammadAryatamaM/Algoritma-dan-Struktur-Data) |
 
-# Jobhseet #5 Brute Force dan Divide Conquer
+# Jobhseet #5 Sorting (Bubble, Selection, dan Insertion Sort)
 
-## Percobaan 1: Menghitung Nilai Faktorial dengan Algoritma Brute Force dan Divide and Conquer
+## Percobaan 1: Mengimplementasikan Sorting Menggunakan Object
 
-### 5.2.2. Verifikasi Hasil Percobaan
+### 6.2.2. Verifikasi Hasil Percobaan: Bubble Sort
 
-Berikut hasil screenshot dari `MainFaktorial15.java`:
+Berikut hasil screenshot dari `SortingMain15.java`:
 
 ![Screenshot](img/1a.png)
 
-### 5.2.3. Jawaban Pertanyaan
+### 6.2.3. Verifikasi Hasil Percobaan: Selection Sort
 
-1. Pada base line Algoritma Divide Conquer untuk melakukan pencarian nilai faktorial, jelaskan
-   perbedaan bagian kode pada penggunaan if dan else! <p>
-   Jawab: Bagian `if` sebagai base case yang akan memberhentikan fungsi rekursif, bagian `else` akan menjalankan kode yang dieprlukan dan memanggil fungsi rekursif dengan parameter yang berbeda
-2. Apakah memungkinkan perulangan pada method `faktorialBF()` diubah selain menggunakan
-   for? Buktikan!<p>
-   Jawab: Bisa, dengan while loop:
+Berikut hasil screenshot dari `SortingMain15.java`:
 
+![Screenshot](img/1b.png)
+
+### 6.2.4. Verifikasi Hasil Percobaan: Insertion Sort
+
+Berikut hasil screenshot dari `SortingMain15.java`:
+
+![Screenshot](img/1c.png)
+
+### 6.2.5 Jawaban Pertanyaan
+
+1. Jelaskan fungsi kode program berikut
    ```
-   int fakto = 1, i = 1;
-   while (i <= n) {
-      fakto = fakto * i;
-      i++;
+   if (data[j - 1] > data[j]) {
+      temp = data[j];
+      data[j] = data[j - 1];
+      data[j - 1] = temp;
    }
-
-   return fakto;
    ```
-
-3. Jelaskan perbedaan antara `fakto *= i;` dan `int fakto = n * faktorialDC(n-1);` ! <p>
-   Jawab: `fakto *= i;` dengan cara Brute Force dengan langsung mengalikan tiap angka, sedangkan `int fakto = n * faktorialDC(n-1);`dengan cara Divide and Conquer memecah bagian dahulu dengan fungsi rekursif lalu mengalikan hasil angka tiap bagian
-4. Buat Kesimpulan tentang perbedaan cara kerja method `faktorialBF()` dan `faktorialDC()`! <p>
-   Jawab: `faktorialBF()` langsung beroperasi dengan angka yang ada, `faktorialDC()` beroperasi setelah bagian telah dipecah sampai base case
-
-## Percobaan 2: Menghitung Hasil Pangkat dengan Algoritma Brute Force dan Divide and Conquer
-
-### 5.3.2. Verifikasi Hasil Percobaan
-
-Berikut hasil screenshot dari `MainPangkat15.java`:
-
-![Screenshot](img/2a.png)
-
-### 5.3.3. Jawaban Pertanyaan
-
-1. Jelaskan mengenai perbedaan 2 method yang dibuat yaitu `pangkatBF()` dan `pangkatDC()`! <p>
-   Jawab: `pangkatBF()` menggunakan Brute Force, `pangkatDC()` menggunakan Divide and Conquer
-2. Apakah tahap combine sudah termasuk dalam kode tersebut? Tunjukkan! <p>
-   Jawab: Sudah, di `return a;`
-3. Pada method `pangkatBF()` terdapat parameter untuk melewatkan nilai yang akan dipangkatkan
-   dan pangkat berapa, padahal di sisi lain di class `Pangkat` telah ada atribut `nilai` dan `pangkat`,
-   apakah menurut Anda method tersebut tetap relevan untuk memiliki parameter? Apakah bisa
-   jika method tersebut dibuat dengan tanpa parameter? Jika bisa, seperti apa method
-   `pangkatBF()` yang tanpa parameter? <p>
-   Jawab: Bisa, namun tidak bisa input elemen, basis, dan pangkat secara dinamis. Hasil di `Q5333.java` dan `MainQ5333.java`
-4. Tarik tentang cara kerja method `pangkatBF()` dan `pangkatDC()`! <p>
-   Jawab: `pangkatBF()` menghitung pangkat dengan mengalikan basis dengan perulangan sebanyak n kali, `pangkatDC()` memecah sampai n tidak bisa dibagi lagi dengan 2 yang lalu a dikali a sebanyak (jumlah pecahan) kali
-
-## Percobaan 3: Menghitung Sum Array dengan Algoritma Brute Force dan Divide and Conquer
-
-### 5.4.2. Verifikasi Hasil Percobaan
-
-Berikut hasil screenshot dari `MainSum15.java`:
-
-![Screenshot](img/3a.png)
-
-### 5.4.3. Jawaban Pertanyaan
-
-1. Kenapa dibutuhkan variable `mid` pada method `TotalDC()`?<p>
-   Jawab: Agar mendapatkan nilai tengah yang dibagi untuk sisi kiri dan sisi kanan
-2. Untuk apakah statement di bawah ini dilakukan dalam `TotalDC()`? <br>
+   Jawab: Jika ditemukan data yang di sebelah kirinya lebih besar, maka data tersebut akan langsung bertukar tempat
+2. Tunjukkan kode program yang merupakan algoritma pencarian nilai minimum pada
+   selection sort! <p>
+   Jawab:
 
    ```
-   double lsum = totalDC(arr, l, mid);
-   double rsum = totalDC(arr, mid + 1, r);
+   int min = i;
+   for (int j = i + 1; j < jumData; j++) {
+      if (data[j] < data[min]) {
+         min = j;
+      }
+   }
    ```
 
-   Jawab: Untuk tiap pecahan selalu membagi menjadi sisi kiri dan sisi kanan sampai tidak bisa lagi
+3. Pada Insertion sort , jelaskan maksud dari kondisi pada perulangan `while (j >= 0 && data[j] > temp)` <p>
+   Jawab: Untuk menentukan kapan data itu tetap digeser atau tidak. Jika data yang ingin disisipkan (`temp`) lebih kecil dari yang di bagian kiri (`j`) maka perulangan akan tetap dilakukan sampai data sudah di paling kiri atau `j` lebih kecil dari `temp`
+4. Pada Insertion sort, apakah tujuan dari perintah `data[j + 1] = data[j];`<p>
+   Jawab: Menukar data sebelah kiri untuk ditempati ke sebelah kanannya
 
-3. Kenapa diperlukan penjumlahan hasil lsum dan rsum seperti di bawah ini? <br>
+## Percobaan 2: Sorting Menggunakan Array of Object
 
+### 6.3.3. Verifikasi Hasil Percobaan: Bubble Sort
+
+Berikut hasil screenshot dari `MahasiswaDemo15.java`:
+
+![Screenshot](img/2a.png) <br>
+![Screenshot](img/2b.png)
+
+### 6.3.4. Jawaban Pertanyaan
+
+1. Perhatikan perulangan di dalam bubbleSort() di bawah ini:
    ```
-   return lsum + rsum;
+   for (int i = 0; i < listMhs.length - 1; i++) {
+      for (int j = 1; j < listMhs.length - i; j++) {
+   ```
+   a. Mengapa syarat dari perulangan `i` adalah `i < listMhs.length - 1` ? <br>
+   Jawab: Karena perulangan `i` mengatur ada berapa tahap perulangan saat sorting, yaitu jumlah data dikurangi 1 <br>
+   b. Mengapa syarat dari perulangan `j` adalah `j < listMhs.length - i` ? <br>
+   Jawab: Karena perulangan `j` mengatur ada berapa kali perulangan untuk menukar angka, dengan tiap tahap yang dilewati, perulangan dalam menukar dikurangi sebesar banyak tahap sorting <br>
+   c. Jika banyak data di dalam `listMhs` adalah 50, maka berapakali perulangan `i` akan berlangsung? Dan ada berapa **Tahap** bubble sort yang ditempuh? <br>
+   Jawab: Ada 49 perulangan, yaitu 49 tahap dengan 49 + 48 + ... + 1 langkah <br>
+2. Modifikasi program diatas dimana data mahasiswa bersifat dinamis (input dari keyboard) yang terdiri dari nim, nama, kelas, dan ipk! <p>
+   Jawab: Di `MahasiswaBerprestasi15.java`, hapus fungsi `tambah()` dan buat fungsi `tambahData()` :
+   ```
+   void tambahData() {
+      for (int i = 0; i < listMhs.length; i++) {
+         System.out.printf( "======= MAHASISWA KE-%d =======\n", (i+1));
+         System.out.print("Nama  : ");
+         String nama = sc.nextLine();
+         System.out.print("NIM   : ");
+         String nim = sc.nextLine();
+         System.out.print("Kelas : ");
+         String kelas = sc.nextLine();
+         System.out.print("IPK   : ");
+         double ipk = sc.nextDouble();
+         System.out.println();
+         sc.nextLine();
+         listMhs[i] = new Mahasiswa15(nim, nama, kelas, ipk);
+      }
+   }
+   ```
+   Lalu di `MahasiswaDemo15.java`, hapus instansiasi objek dan line `list.tambah()`, diganti `list.tambahData()`
+
+### 6.3.6. Verifikasi Hasil Percobaan: Selection Sort
+
+Berikut hasil screenshot dari `MahasiswaDemo15.java`:
+
+![Screenshot](img/2c.png) <br>
+![Screenshot](img/2d.png)
+
+### 6.3.7. Jawaban Pertanyaan
+
+1. Di dalam method selection sort, terdapat baris program seperti di bawah ini:
+   ```
+   int idxMin = i;
+   for (int j = i + 1; j < listMhs.length; j++) {
+      if (listMhs[j].ipk < listMhs[idxMin].ipk) {
+         idxMin = j;
+      }
+   }
+   ```
+   Untuk apakah proses tersebut, jelaskan! <p>
+   Jawab: Menentukan data terkecil sementara di index `i`, lalu lakukan perulangan dari data di kanan setelahnya (`i + 1`) sampai data terakhir. Jika ada data setelahnya yang lebih kecil dari data di index `i` tadi, maka index tadi ditukar dengan dindex `j` (terkecil sekarang)
+
+### 6.3.9. Verifikasi Hasil Percobaan: Insertion Sort
+
+Berikut hasil screenshot dari `MahasiswaDemo15.java`:
+
+![Screenshot](img/2e.png) <br>
+![Screenshot](img/2f.png)
+
+### 6.3.10. Jawaban Pertanyaan
+
+1. Ubahlah fungsi pada `InsertionSort` sehingga fungsi ini dapat melaksanakan proses sorting dengan cara descending.<p>
+   Jawab:
+   ```
+   void insertionSort() {
+      for (int i = 1; i < listMhs.length; i++) {
+         Mahasiswa15 temp = listMhs[i];
+         int j = i;
+         while (j > 0 && listMhs[j - 1].ipk < temp.ipk) {
+            listMhs[j] = listMhs[j - 1];
+            j--;
+         }
+         listMhs[j] = temp;
+      }
+   }
    ```
 
-   Jawab: Menggabungkan hasil penjumlahan sisi kiri dan sisi kanan dari pecahan kecil sampai pecahan terakhir
+## 6.4.1. Solusi Latihan Praktikum Dosen
 
-4. Apakah base case dari `totalDC()`?<p>
-   Jawab: `l == r`
-5. Tarik Kesimpulan tentang cara kerja `totalDC()`?<p>
-   Jawab: Parameternya berupa array, index pertama, dan index terakhir. Diambil nilai tengah (mid), dimana sisi kiri berawal dari index pertama sampai mid dan sisi kanan berawal dari `mid + 1` sampai index terakhir. Jika `l != r`, bagi lagi dengan proses yang sama. Setelah kedua sisi punya nilai yang sama (`l == r`), return nilainya dengan menjumlahkan sisi kiri dan sisi kanannya. Tiap pecahan akan masing-masing return nilai lalu dijumlah, sampai pecahan terbesar dan solusi terakhir
+Solusi ada di `Dosen15.java`, `DataDosen15.java`, dan `MainDosen15.java`, dan berikut screenshot hasilnya
 
-## 5.4.1. Solusi Latihan Praktikum Daftar Nilai
-
-Solusi ada di `DaftarNilai15.java` dan `MainDaftarNilai15.java`, dan berikut screenshot hasilnya
-
-![Screenshot](img/4a.png)
+![Screenshot](img/3a.png) <br>
+![Screenshot](img/3b.png) <br>
+![Screenshot](img/3c.png) <br>
+![Screenshot](img/3d.png) <br>
+![Screenshot](img/3e.png) <br>
+![Screenshot](img/3f.png) <br>
 
 **Penjelasan singkat:**
 
-#### Pada DaftarNilai15.java ada 4 langkah utama:
+#### Pada Dosen15.java ada 2 langkah utama:
 
 1. Deklarasi atribut dan buat konstruktor berparameter untuk tiap atribut
-2. Untuk method `tertinggiUTSDC`: Parameternya berupa array nilai, index pertama, dan index terakhir. Diambil nilai tengah (mid), dimana sisi kiri berawal dari index pertama sampai mid dan sisi kanan berawal dari `mid + 1` sampai index terakhir. Jika `l != r`, bagi lagi dengan proses yang sama. Setelah kedua sisi punya nilai yang sama (`l == r`), cari nilai tertinggi dengan membandingkan sisi kiri dan sisi kanan, dan return nilai tertingginya. Tiap pecahan akan masing-masing return nilai lalu dibandingkan, sampai pecahan terbesar dan solusi terakhir
-3. Untuk method `terendahUTSDC`: Parameternya berupa array nilai, index pertama, dan index terakhir. Diambil nilai tengah (mid), dimana sisi kiri berawal dari index pertama sampai mid dan sisi kanan berawal dari `mid + 1` sampai index terakhir. Jika `l != r`, bagi lagi dengan proses yang sama. Setelah kedua sisi punya nilai yang sama (`l == r`), cari nilai terendah dengan membandingkan sisi kiri dan sisi kanan, dan return nilai terendahnya. Tiap pecahan akan masing-masing return nilai lalu dibandingkan, sampai pecahan terbesar dan solusi terakhir
-4. Untuk method `rerataUAS`: Jumlahkan nilai tiap index array dengan for loop, lalu return total dibagi dengan panjang array
+2. Untuk method `tampil`: Menampilkan seluruh atribut
 
-#### Pada MainDaftarNilai15.java ada 2 langkah utama:
+#### Pada DataDosen15.java ada 5 langkah utama:
 
-1. Membuat array dari objek nilai dan input tiap atribut dengan konstruktor berparameter
-2. Panggil fungsi
+1. Deklarasi array `dataDosen` berukuran `10` dan variabel `idx = 0`
+2. Untuk method `tambah`: Mengambil parameter dengan objek `Dosen15` yang akan disimpan ke array `dataDosen` dengan `idx++` di akhir
+3. Untuk method `tampil`: Mencetak tiap objek dengan menjalankan `tampil` sesuai yang di kelas `Dosen15`
+4. Untuk method `bubbleSort`: Mengurutkan data secara ascending dengan menukar 2 angka dari yang pertama hingga terakhir, yang tidak cocok akan ditukar secara berulang sampai selesai
+5. Untuk method `insertionSort`: Mengurutkan data secara descending dengan menyelipkan angka yang dari data tidak terurut ke data terurut yang tepat tempatnya
+
+#### Pada MainDosen15.java ada 3 langkah utama:
+
+1. Instansiasi objek `list` bertipe `dataDosen15`
+2. Membuat objek baru bertipe `Dosen15` dengan konstruktor berparameter serta ditambah ke array dengan fungsi `tambah` yang sudah dibuat
+3. Panggil fungsi `tampil`, `bubbleSort`, dan `insertionSort`

@@ -1,4 +1,4 @@
-package alsdJobsheet5;
+package alsdJobsheet4;
 import java.util.*;
 public class MainPangkat15 {
     public static void main(String[] args) {

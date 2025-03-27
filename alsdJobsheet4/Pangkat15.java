@@ -1,4 +1,4 @@
-package alsdJobsheet5;
+package alsdJobsheet4;
 
 public class Pangkat15 {
     int nilai;

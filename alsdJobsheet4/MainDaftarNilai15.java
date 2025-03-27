@@ -1,4 +1,4 @@
-package alsdJobsheet5;
+package alsdJobsheet4;
 
 public class MainDaftarNilai15 {
     public static void main(String[] args) {

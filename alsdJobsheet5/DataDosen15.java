@@ -1,4 +1,4 @@
-package alsdJobsheet6;
+package alsdJobsheet5;
 
 public class DataDosen15 {
     Dosen15[] dataDosen = new Dosen15[10];

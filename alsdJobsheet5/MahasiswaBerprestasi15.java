@@ -1,4 +1,4 @@
-package alsdJobsheet6;
+package alsdJobsheet5;
 import java.util.*;
 public class MahasiswaBerprestasi15 {
     Scanner sc = new Scanner(System.in);
