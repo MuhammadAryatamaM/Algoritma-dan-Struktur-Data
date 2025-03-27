@@ -9,25 +9,25 @@
 
 ## Percobaan 1: Mengimplementasikan Sorting Menggunakan Object
 
-### 6.2.2. Verifikasi Hasil Percobaan: Bubble Sort
+### 5.2.2. Verifikasi Hasil Percobaan: Bubble Sort
 
 Berikut hasil screenshot dari `SortingMain15.java`:
 
 ![Screenshot](img/1a.png)
 
-### 6.2.3. Verifikasi Hasil Percobaan: Selection Sort
+### 5.2.3. Verifikasi Hasil Percobaan: Selection Sort
 
 Berikut hasil screenshot dari `SortingMain15.java`:
 
 ![Screenshot](img/1b.png)
 
-### 6.2.4. Verifikasi Hasil Percobaan: Insertion Sort
+### 5.2.4. Verifikasi Hasil Percobaan: Insertion Sort
 
 Berikut hasil screenshot dari `SortingMain15.java`:
 
 ![Screenshot](img/1c.png)
 
-### 6.2.5 Jawaban Pertanyaan
+### 5.2.5 Jawaban Pertanyaan
 
 1. Jelaskan fungsi kode program berikut
    ```
@@ -58,14 +58,14 @@ Berikut hasil screenshot dari `SortingMain15.java`:
 
 ## Percobaan 2: Sorting Menggunakan Array of Object
 
-### 6.3.3. Verifikasi Hasil Percobaan: Bubble Sort
+### 5.3.3. Verifikasi Hasil Percobaan: Bubble Sort
 
 Berikut hasil screenshot dari `MahasiswaDemo15.java`:
 
 ![Screenshot](img/2a.png) <br>
 ![Screenshot](img/2b.png)
 
-### 6.3.4. Jawaban Pertanyaan
+### 5.3.4. Jawaban Pertanyaan
 
 1. Perhatikan perulangan di dalam bubbleSort() di bawah ini:
    ```
@@ -100,18 +100,18 @@ Berikut hasil screenshot dari `MahasiswaDemo15.java`:
    ```
    Lalu di `MahasiswaDemo15.java`, hapus instansiasi objek dan line `list.tambah()`, diganti `list.tambahData()`
 
-### 6.3.6. Verifikasi Hasil Percobaan: Selection Sort
+### 5.3.6. Verifikasi Hasil Percobaan: Selection Sort
 
 Berikut hasil screenshot dari `MahasiswaDemo15.java`:
 
 ![Screenshot](img/2c.png) <br>
 ![Screenshot](img/2d.png)
 
-### 6.3.7. Jawaban Pertanyaan
+### 5.3.7. Jawaban Pertanyaan
 
 1. Di dalam method selection sort, terdapat baris program seperti di bawah ini:
    ```
-   int idxMin = i;
+   it idxMin = i;
    for (int j = i + 1; j < listMhs.length; j++) {
       if (listMhs[j].ipk < listMhs[idxMin].ipk) {
          idxMin = j;
@@ -121,14 +121,14 @@ Berikut hasil screenshot dari `MahasiswaDemo15.java`:
    Untuk apakah proses tersebut, jelaskan! <p>
    Jawab: Menentukan data terkecil sementara di index `i`, lalu lakukan perulangan dari data di kanan setelahnya (`i + 1`) sampai data terakhir. Jika ada data setelahnya yang lebih kecil dari data di index `i` tadi, maka index tadi ditukar dengan dindex `j` (terkecil sekarang)
 
-### 6.3.9. Verifikasi Hasil Percobaan: Insertion Sort
+### 5.3.9. Verifikasi Hasil Percobaan: Insertion Sort
 
 Berikut hasil screenshot dari `MahasiswaDemo15.java`:
 
 ![Screenshot](img/2e.png) <br>
 ![Screenshot](img/2f.png)
 
-### 6.3.10. Jawaban Pertanyaan
+### 5.3.10. Jawaban Pertanyaan
 
 1. Ubahlah fungsi pada `InsertionSort` sehingga fungsi ini dapat melaksanakan proses sorting dengan cara descending.<p>
    Jawab:
@@ -146,7 +146,7 @@ Berikut hasil screenshot dari `MahasiswaDemo15.java`:
    }
    ```
 
-## 6.4.1. Solusi Latihan Praktikum Dosen
+## 5.4.1. Solusi Latihan Praktikum Dosen
 
 Solusi ada di `Dosen15.java`, `DataDosen15.java`, dan `MainDosen15.java`, dan berikut screenshot hasilnya
 
