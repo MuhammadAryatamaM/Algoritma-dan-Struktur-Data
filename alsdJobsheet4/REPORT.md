@@ -9,13 +9,13 @@
 
 ## Percobaan 1: Menghitung Nilai Faktorial dengan Algoritma Brute Force dan Divide and Conquer
 
-### 5.2.2. Verifikasi Hasil Percobaan
+### 4.2.2. Verifikasi Hasil Percobaan
 
 Berikut hasil screenshot dari `MainFaktorial15.java`:
 
 ![Screenshot](img/1a.png)
 
-### 5.2.3. Jawaban Pertanyaan
+### 4.2.3. Jawaban Pertanyaan
 
 1. Pada base line Algoritma Divide Conquer untuk melakukan pencarian nilai faktorial, jelaskan
    perbedaan bagian kode pada penggunaan if dan else! <p>
@@ -41,13 +41,13 @@ Berikut hasil screenshot dari `MainFaktorial15.java`:
 
 ## Percobaan 2: Menghitung Hasil Pangkat dengan Algoritma Brute Force dan Divide and Conquer
 
-### 5.3.2. Verifikasi Hasil Percobaan
+### 4.3.2. Verifikasi Hasil Percobaan
 
 Berikut hasil screenshot dari `MainPangkat15.java`:
 
 ![Screenshot](img/2a.png)
 
-### 5.3.3. Jawaban Pertanyaan
+### 4.3.3. Jawaban Pertanyaan
 
 1. Jelaskan mengenai perbedaan 2 method yang dibuat yaitu `pangkatBF()` dan `pangkatDC()`! <p>
    Jawab: `pangkatBF()` menggunakan Brute Force, `pangkatDC()` menggunakan Divide and Conquer
@@ -64,13 +64,13 @@ Berikut hasil screenshot dari `MainPangkat15.java`:
 
 ## Percobaan 3: Menghitung Sum Array dengan Algoritma Brute Force dan Divide and Conquer
 
-### 5.4.2. Verifikasi Hasil Percobaan
+### 4.4.2. Verifikasi Hasil Percobaan
 
 Berikut hasil screenshot dari `MainSum15.java`:
 
 ![Screenshot](img/3a.png)
 
-### 5.4.3. Jawaban Pertanyaan
+### 4.4.3. Jawaban Pertanyaan
 
 1. Kenapa dibutuhkan variable `mid` pada method `TotalDC()`?<p>
    Jawab: Agar mendapatkan nilai tengah yang dibagi untuk sisi kiri dan sisi kanan
@@ -96,7 +96,7 @@ Berikut hasil screenshot dari `MainSum15.java`:
 5. Tarik Kesimpulan tentang cara kerja `totalDC()`?<p>
    Jawab: Parameternya berupa array, index pertama, dan index terakhir. Diambil nilai tengah (mid), dimana sisi kiri berawal dari index pertama sampai mid dan sisi kanan berawal dari `mid + 1` sampai index terakhir. Jika `l != r`, bagi lagi dengan proses yang sama. Setelah kedua sisi punya nilai yang sama (`l == r`), return nilainya dengan menjumlahkan sisi kiri dan sisi kanannya. Tiap pecahan akan masing-masing return nilai lalu dijumlah, sampai pecahan terbesar dan solusi terakhir
 
-## 5.4.1. Solusi Latihan Praktikum Daftar Nilai
+## 4.4.1. Solusi Latihan Praktikum Daftar Nilai
 
 Solusi ada di `DaftarNilai15.java` dan `MainDaftarNilai15.java`, dan berikut screenshot hasilnya
 
