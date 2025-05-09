@@ -126,7 +126,7 @@ Solusi ada di `AntrianKRS15.java`, `LayananKRS15.java`, dan `Mahasiswa15.java`, 
 1. Deklarasi atribut dan konstruktor berparameter tiap atribut
 2. Untuk method `tampilkanData`: Print tiap atribut
 
-#### Pada AntrianKRS15.java ada 7 langkah utama:
+#### Pada AntrianKRS15.java ada 13 langkah utama:
 
 1. Deklarasi array `data` berukuran `10` dengan tipe data `Mahasiswa15` dan atribut `front`, `rear`, `size`, `max`, dan `sudahDiproses`
 2. Buat konstruktor berparameter `n` dengan mengisi `max = n`, `data[]` berukuran `n`, `front, size, sudahDiproses = 0`, dan `rear = -1`
@@ -142,7 +142,7 @@ Solusi ada di `AntrianKRS15.java`, `LayananKRS15.java`, dan `Mahasiswa15.java`, 
 12. Untuk method `jumlahSudahDiproses`: Return `sudahDiproses`
 13. Untuk method `jumlahBelumDiproses`: Return `30 - sudahDiproses`
 
-#### Pada LayananKRS15.java ada 5 langkah utama:
+#### Pada LayananKRS15.java ada 10 langkah utama:
 
 1. Instansiasi objek `antrian` bertipe `AntrianKRS15` dengan ukuran `10` dan buat while loop selama `pilihan != 0` untuk menu
 2. Menu 1 (Tambah Mahasiswa ke Antrian): Input tiap atribut `Mahasiswa15` ke variabel lalu buat objek baru `mhs` dengan parameter tiap atribut yang sudah diinput. Masukkan `mhs` ke stack dengan **tambahAntrian(mhs)**
