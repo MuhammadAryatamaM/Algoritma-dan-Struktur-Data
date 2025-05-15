@@ -110,6 +110,10 @@ Berikut hasil screenshot dari `LayananAkademikSIAKAD15.java`:
 
 ## 10.4.1. Solusi Latihan Praktikum KRS
 
+Berikut class diagram untuk `AntrianKRS15.java`:
+
+![Screenshot](img/DiagramClassKRS.png) <br>
+
 Solusi ada di `AntrianKRS15.java`, `LayananKRS15.java`, dan `Mahasiswa15.java`, dan berikut screenshot hasilnya
 
 ![Screenshot](img/3a.png) <br>
