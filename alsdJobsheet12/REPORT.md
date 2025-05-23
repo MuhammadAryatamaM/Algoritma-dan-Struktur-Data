@@ -96,7 +96,7 @@ Berikut hasil screenshot dari `DLLMain15.java`:
 2. Modifikasi kode program untuk menampilkan pesan “Data sudah berhasil dihapus. Data yang terhapus adalah … “ <p>
    Jawab: Modifikasi di `DoubleLinkedList15.java` di method **removeFirst**, **removeLast**, **remove**, dan **removeAfter**
 
-## 13.4.1. Solusi Latihan Praktikum Antrian DLL
+## 12.4.1. Solusi Latihan Praktikum Antrian DLL
 
 Solusi ada di `DLLMain15.java` dan `DoubleLinkedList15.java` dan berikut screenshot hasilnya
 
